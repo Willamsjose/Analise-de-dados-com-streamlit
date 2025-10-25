@@ -10,7 +10,7 @@ st_autorefresh(interval=5000, key="data_refresh_key")
 # ----------------------------------------------------
 
 st.set_page_config(layout='wide')
-st.title("Dashboard de Vendas (shopping_trolley)")
+st.title("Dashboard de Vendas ")
 
 # 2. Chamar a função para obter o DataFrame ATUALIZADO
 # O cache no dataset.py fará com que a leitura do JSON só ocorra quando necessário.
@@ -47,4 +47,3 @@ if not df.empty:
 else:
     st.warning("Não foi possível carregar os dados. Verifique o arquivo JSON em 'dados/vendas.json'.")
 
-    
